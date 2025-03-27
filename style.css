@@ -1,180 +1,320 @@
 * {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar_logo > img {
+  height: 70px;
+  width: auto;
+}
+.navbar_links > a {
+  margin: 0 12px;
+}
+.navbar_links > a {
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+.navbar_links > a:hover {
+  text-decoration: underline;
+}
+.book-trip-btn {
+  padding: 12px 33px;
+  border: 2.5px solid orange;
+  border-radius: 30px;
+  background-color: rgb(250, 238, 214);
+  color: rgb(255, 123, 0);
+  font-size: larger;
+  cursor: pointer;
+}
+.bg {
+  height: 800px;
+  width: 100%;
+  border-radius: 50px;
+  position: relative;
+}
+.content {
+  top: 20%;
+  left: 5%;
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.box-1 {
+  height: 500px;
+  width: 500px;
+}
+.box-2 {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.p-1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.p-2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.buttons > button {
+  box-shadow: 0 8px 16px 0 rgba(255, 254, 254, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  font-size: medium;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: 2.5px solid white;
+  cursor: pointer;
+}
+.btn-1 {
+  background-color: transparent;
+  color: #fff;
+}
+.btn-2 {
+  background-color: #fff;
+  color: rgb(255, 145, 0);
+}
+.boxes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.b-1 > img,
+.b-2 > img,
+.b-3 > img,
+.b-4 > img {
+  height: 50px;
+  width: auto;
+}
+.b-1,
+.b-2,
+.b-3,
+.b-4 {
+  padding: 40px 15px;
+  background-color: rgb(248, 243, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.header {
+  font-size: 25px;
+  font-weight: 700;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.heading-1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.heading-2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.chatBot {
+  display: none;
+  position: fixed;
+  bottom: 8%;
+  right: 5%;
+  background-color: #fff;
+  border: 3px solid rgb(255, 136, 0);
+  border-radius: 10px;
+  margin: 50px auto;
+  overflow: hidden;
+  overflow-y: clip;
+  height: 600px;
+  width: 500px;
+  background: rgb(255, 255, 255);
+  background-size: contain;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  background-color: rgb(255, 136, 0);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 7px 7px 0 0;
+}
+header h2 {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+.chatbox {
+  padding: 15px;
+  list-style: none;
+  overflow-y: auto;
+  height: 400px;
+  margin: 0;
+}
+.chatbox li {
+  margin-bottom: 10px;
+}
+.chat p {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+.chat-outgoing p {
+  background-color: rgb(255, 136, 0);
+  align-self: flex-end;
+  color: #fff;
+}
+.chat-incoming p {
+  background-color: #eaeaea;
+}
+.chat-input {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.chat-input textarea {
+  width: 522px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  resize: none;
+  outline: none;
+  overflow-y: scroll;
+  background-color: #dcdcdc85;
+  font-size: 16px;
+  color: rgb(255, 136, 0);
+  font-weight: 600;
+  margin-top: -10px;
+  margin-left: -15px;
+  height: 71px;
+}
+#cross {
+  float: right;
+  position: relative;
+  top: -30px;
+  left: -15px;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+}
+#cross:hover {
+  color: red;
+  transition: all 0.5s;
+}
+.chatbox .chat p.error {
+  color: #ffffff;
+  background-color: #ff3737e8;
+}
+#sendBTN {
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 7px;
+  background-color: rgb(255, 136, 0);
+  cursor: pointer;
+  color: white;
+  margin-top: 12px;
+}
+.lastMessage {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(255, 136, 0);
+  margin-left: 550px;
+}
+.open-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 80px;
+  width: auto;
+  z-index: 1;
+  cursor: pointer;
+  background-size: cover;
+}
+.open-icon > img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 1110px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
   }
-  .navbar_logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  .navbar_links {
+    display: none;
   }
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  .buttons {
+    flex-direction: column;
   }
-  .navbar_logo > img{
-    height: 70px;
-    width: auto;
+  .p-1 {
+    font-size: 30px;
   }
-  .navbar_links > a {
-    margin: 0 12px;
+  .p-2 {
+    font-size: 15px;
   }
-  .navbar_links > a {
-    text-decoration: none;
-    text-align: center;
-    font-size: large;
-    font-family: "Times New Roman", Times, serif;
-    color: black;
+  .box-1 {
+    height: 320px;
+    width: 320px;
   }
-  .navbar_links > a:hover {
-    text-decoration: underline;
+  .buttons > button {
+    padding: 15px 30px;
   }
   .book-trip-btn {
-    padding: 15px 33px;
-    border: 2.5px solid orange;
-    border-radius: 30px;
-    background-color: rgb(250, 238, 214);
-    color: rgb(255, 123, 0);
-    font-size: larger;
-    cursor: pointer;
+    font-size: medium;
   }
-  .bg{
-    height: 800px;
-    width: 100%;
-    border-radius: 50px;
-    position: relative;
-  }
-  .content{
-    top: 20%;
-    left: 5%;
-    position:absolute;
-    display: flex;
-    gap: 90px;
-    align-items: center;
-  }
-  .box-1{
-    height: 500px;
-    width: 500px;
-  }
-  .box-2{
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .p-1{
-    font-size: 50px;
-    font-weight: 800;
-  }
-  .p-2{
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .buttons{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  .buttons > button{
-    box-shadow: 0 8px 16px 0 rgba(255, 254, 254, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);    font-size: medium;
-    font-weight: 600;
-    padding: 20px 40px;
-    border-radius: 30px;
-    border: 2.5px solid white;
-    cursor: pointer;
-  }
-  .btn-1{
-    background-color: transparent;
-    color: #fff;
-  }
-  .btn-2{
-    background-color: #fff;
-    color: rgb(255, 145, 0);
-  }
-  .boxes{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 100px;
-  }
-  .b-1 > img, .b-2 > img, .b-3 > img, .b-4 > img{
-    height: 50px;
-    width: auto;
-  }
-  .b-1, .b-2, .b-3, .b-4{
-    padding: 40px 15px;
-    background-color: rgb(248, 243, 243);
-    display: flex;
+  .boxes {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
   }
-  .header{
-    font-size: 25px;
-    font-weight: 700;
+  .heading {
+    margin-top: 13px;
   }
-  .heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+  .heading-1 {
+    font-size: 30px;
   }
-  .heading-1{
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 0;
+  .heading-2 {
+    font-size: 15px;
   }
-  .heading-2{
-    font-size: 20px;
-    font-weight: 500;
+}
+@media only screen and (max-width: 550px) {
+  .chatBot {
+    width: 330px;
   }
-@media only screen and (max-width: 1110px) {
-    .content{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .navbar_links{
-        display: none;
-    }
-    .buttons{
-        flex-direction: column;
-    }
-    .p-1{
-        font-size: 30px;
-    }
-    .p-2{
-        font-size: 15px;
-    }
-    .box-1{
-        height: 320px;
-        width: 320px;
-    }
-    .buttons > button{
-        padding: 15px 30px;
-    }
-    .book-trip-btn {
-        padding: 14px 22px;
-        font-size: medium;
-    }
-    .boxes{
-        flex-direction: column;
-    }
-    .heading{
-        margin-top: 13px;
-    }
-    .heading-1{
-        font-size: 30px;
-    }
-      .heading-2{
-        font-size: 15px;
-    }
+  
 }

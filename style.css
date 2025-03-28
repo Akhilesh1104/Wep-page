@@ -21,7 +21,7 @@
   z-index: 1;
 }
 .navbar_logo > img {
-  height: 70px;
+  height: 60px;
   width: auto;
 }
 .navbar_links > a {
@@ -263,7 +263,7 @@ header h2 {
   bottom: 20px;
   right: 20px;
   height: 80px;
-  width: auto;
+  width: 80px;
   z-index: 1;
   cursor: pointer;
   background-size: cover;
@@ -316,5 +316,10 @@ header h2 {
   .chatBot {
     width: 330px;
   }
-  
+  .navbar_logo_heading{
+    font-size: x-large;
+  }
+  .navbar_logo > img {
+    height: 45px;
+  }
 }

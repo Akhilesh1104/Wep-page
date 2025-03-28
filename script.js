@@ -1,6 +1,6 @@
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input button");
-let chatbot = document.querySelector(".chatBot");
+const chatbot = document.querySelector(".chatBot");
 const chatbox = document.querySelector(".chatbox");
 
 let userMessage;
@@ -33,7 +33,6 @@ function cancel() {
   chatbot.style.display = "none";
 }
 
-let chatbotopen = document.querySelector(".open-icon");
-chatbotopen.addEventListener("click", (e) => {
+function openchatbot() {
   chatbot.style.display = "block";
-});
+}

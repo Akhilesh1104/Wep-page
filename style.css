@@ -188,17 +188,21 @@ header h2 {
 }
 .chat p {
   padding: 10px 15px;
-  border-radius: 20px;
   max-width: 70%;
   word-wrap: break-word;
 }
 .chat-outgoing p {
   background-color: rgb(255, 136, 0);
-  align-self: flex-end;
   color: #fff;
+  display: flex;
+  justify-self: flex-end;
+  border-radius: 17px 17px 0 17px;
 }
 .chat-incoming p {
   background-color: #eaeaea;
+  display: flex;
+  justify-self: flex-start;
+  border-radius: 17px 17px 17px 0;
 }
 .chat-input {
   padding: 10px;

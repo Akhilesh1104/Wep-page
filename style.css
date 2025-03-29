@@ -321,6 +321,9 @@ header h2 {
   .chatBot {
     width: 330px;
   }
+  .navbar{
+    padding: 5px 0;
+  }
   .navbar_logo_heading{
     font-size: x-large;
   }

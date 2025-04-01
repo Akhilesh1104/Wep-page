@@ -286,6 +286,13 @@ header h2 {
     flex-direction: column;
     gap: 30px;
   }
+  .box-1 {
+    height: 320px;
+    width: 320px;
+  }
+  .box-2{
+    flex-direction: column;
+  }
   .navbar_links {
     display: none;
   }
@@ -296,11 +303,7 @@ header h2 {
     font-size: 30px;
   }
   .p-2 {
-    font-size: 15px;
-  }
-  .box-1 {
-    height: 320px;
-    width: 320px;
+    font-size: 17px;
   }
   .buttons > button {
     padding: 15px 30px;
@@ -342,6 +345,10 @@ header h2 {
   .chatbox{
     height: 300px;
   }
+  .box-1 {
+    height: 250px;
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 355px) {
   .p-1{
@@ -362,7 +369,7 @@ header h2 {
     width: 60px;  
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 303px) {
   .book-trip-btn {
     visibility: hidden;
   }

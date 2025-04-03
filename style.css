@@ -54,7 +54,7 @@
 }
 
 .hero {
-  background-image: url('https://sb.kaleidousercontent.com/67418/1920x1100/2ed9107761/bg.png');
+  background-image: url("https://sb.kaleidousercontent.com/67418/1920x1100/2ed9107761/bg.png");
   background-size: cover;
   height: 800px;
   width: 100%;
@@ -346,10 +346,10 @@ header h2 {
   .chatBot {
     width: 330px;
   }
-  .navbar{
+  .navbar {
     padding: 5px 0;
   }
-  .navbar_logo_heading{
+  .navbar_logo_heading {
     font-size: x-large;
   }
   .navbar_logo > img {
@@ -357,10 +357,10 @@ header h2 {
   }
 }
 @media only screen and (max-width: 385px) {
-  .chatBot{
+  .chatBot {
     height: 540px;
   }
-  .chatbox{
+  .chatbox {
     height: 300px;
   }
   .box-1 {
@@ -369,7 +369,7 @@ header h2 {
   }
 }
 @media only screen and (max-width: 355px) {
-  .p-1{
+  .p-1 {
     margin-bottom: 0;
   }
   .chatBot {
@@ -382,9 +382,9 @@ header h2 {
   .book-trip-btn {
     padding: 8px 11px;
   }
-  .open-icon{
+  .open-icon {
     height: 60px;
-    width: 60px;  
+    width: 60px;
   }
 }
 @media only screen and (max-width: 303px) {
@@ -414,7 +414,8 @@ header h2 {
   margin-bottom: 10px;
   font-size: 1.4em;
 }
-.footer-section p, .footer-section ul {
+.footer-section p,
+.footer-section ul {
   font-size: 1em;
 }
 .footer-section ul {
@@ -528,7 +529,7 @@ header h2 {
     padding: 50px 0;
   }
 }
-p{
+p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
